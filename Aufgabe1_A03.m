@@ -61,7 +61,8 @@ userChoice = "hit";
 userInput = input("Möchtest du ein Spiel starten ? [Y/N]","S");
 if userInput == "Y"
 %% Erste Hand des Dealers 
-     dr = randi([1,13]);    %ein zufälliger int zwischen 1 und 13 wird generiert
+     dr = randi([1,13]);    
+        %ein zufälliger int zwischen 1 und 13 wird generiert
      if dr == 1, dAceCounter = dAceCounter +1 ; end            
         %Falls die zufällige Zahl 1 als ein Ass ist wollen wir den Ass Counter erhöhen
      dealerHand(dRunde,1)= cards{dr,2}; 
